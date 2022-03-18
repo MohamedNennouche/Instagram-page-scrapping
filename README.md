@@ -1,11 +1,28 @@
-## But du projet
-Le but de ce projet est de scrapper les données d'une page Instagram et de les visualiser sur un ensemble de paramètres de visualisation
-## Plan du dépôt 
-- vicData : Fichier principal permettant la visualisation des données et tout
-- data-scrapping : Fichier permettant le scrapping des données de la page Instagram du VIC
-## Modules et packages utilisés 
-- Numpy 
-- Matplotlib (module pyplot)
-- Pandas
-- Instascrape
+# :mag_right: Instagram page scrapping
+## :dart: Purpose of the project
+The goal of this project is to give a simple and efficient method for scraping an Instagram page using Python. Also this project contains a use case, on the Instagram page of the Vision & Innovation Club and a notebook to show the visualizations that can be done. 
+## :memo: Software requirements
+For the compilation of this project you should have : 
+- Python 3.6 and + (or Anaconda)
+
+And the following Python modules 
+
+- Numpy (available natively in Anaconda)
+- Matplotlib (available natively in Anaconda)
+- Pandas ((available natively in Anaconda))
+- Instrascrape
 - Selenium
+
+## :wrench: How to use this project?
+1. Clone the GitHub repository
+2. Make sure you have everything you need as modules and libraries
+3. Go to the folder and open the command line and write: 
+``python data-scrapping.py`` 
+(or you can use Anaconda with conda)
+4. Insert the requested information 
+    a. [How to get your session ID](https://www.youtube.com/watch?v=eKoaj8rUKOg)
+    b. [How to retrieve your user agent](https://www.infowebmaster.fr/outils/mon-user-agent.php)
+5. Wait for the scrapping to take place without shutting down your PC or closing the Chrome window that has opened. (Disclaimer: this can take several tens of minutes depending on the number of publications and the speed of your connection)
+
+## :exclamation: Disclaimer
+This project has no commercial purpose, The data collected is perfectly public and therefore I am in no way responsible for any use of a person on any Instagram page. 

@@ -8,19 +8,14 @@ from selenium.webdriver import Chrome
 # Declaration of a webdriver (for me it's a Chrome webdriver)
 driver = Chrome()
 
-'''
-Add here : 
-- Your session ID to line 16
-- Your user agent to line 18
-- The username of the instagram page you want to scrape to line 21
-'''
-sessionID = input('Enter your session ID')
-userAgent = input('Enter your user agent')
+sessionID = input('Enter your session ID : ')
+userAgent = input('Enter your user agent : ')
 SESSIONID = sessionID
 headers = {"user-agent": userAgent,
            "cookie": f"sessionid={SESSIONID};"}
 
-instaPage = Profile("InstagramID")
+instaID = input('Enter the username of the instagram page you want to scrap : ')
+instaPage = Profile(instaID)
 instaPage.scrape(headers=headers)
 posts = instaPage.get_posts(webdriver=driver, login_first=True)
 scraped, unscraped = scrape_posts(posts, silent=False, headers=headers, pause=5) 
