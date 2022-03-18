@@ -14,8 +14,10 @@ Add here :
 - Your user agent to line 18
 - The username of the instagram page you want to scrape to line 21
 '''
-SESSIONID = 'YOURSESSIONID'
-headers = {"user-agent": "YOURUSERAGENT",
+sessionID = input('Enter your session ID')
+userAgent = input('Enter your user agent')
+SESSIONID = sessionID
+headers = {"user-agent": userAgent,
            "cookie": f"sessionid={SESSIONID};"}
 
 instaPage = Profile("InstagramID")
@@ -28,4 +30,4 @@ posts_df = pd.DataFrame(data_post)
 
 
 # Before saving the file you can delete the columns you consider superfluous
-posts_df.to_csv('vic_post_data.csv')
+posts_df.to_csv('post_data.csv')
